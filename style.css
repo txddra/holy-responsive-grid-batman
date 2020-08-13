@@ -80,4 +80,17 @@
   "ads ads ads"
   "ftr ftr ftr";
 }
+
 };
+
+/* tablet view */
+@media(min-width:801px) and (max-width:1100px){
+  #app{
+    grid-template-areas: 
+    "hdr hdr hdr"
+    "nav nav nav"
+    "ar1 ar1 ads"
+    "ar2 ar2 ads"
+    "ftr ftr ftr";
+  }
+}
