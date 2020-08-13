@@ -19,7 +19,7 @@
   grid-row: 1 / 2;
   /* or, instead of the above two lines */
   /* we could use grid areas:  */
-  /* grid-area: hdr; */
+  grid-area: hdr;
   background-color: #f3ca40;
 }
 
@@ -28,7 +28,7 @@
   grid-column: 1 / 2;
   /* or, instead of the above two lines */
   /* we could use grid areas:  */
-  /* grid-area: nav; */
+  grid-area: nav;
   background-color: #4b4e6d;
 }
 
@@ -37,7 +37,7 @@
   grid-column: 2 / 3;
   /* or, instead of the above two lines */
   /* we could use grid areas:  */
-  /* grid-area: ar1; */
+  grid-area: ar1;
   background-color: #6a8d92;
 }
 
@@ -46,7 +46,7 @@
   grid-column: 2 / 3;
   /* or, instead of the above two lines */
   /* we could use grid areas:  */
-  /* grid-area: ar2; */
+  grid-area: ar2;
   background-color: cornflowerblue;
 }
 
@@ -55,7 +55,7 @@
   grid-column: 3 / 4;
   /* or, instead of the above two lines */
   /* we could use grid areas:  */
-  /* grid-area: ads; */
+  grid-area: ads;
   background-color: #f2a541;
 }
 
@@ -64,6 +64,20 @@
   grid-row: 4 / 5;
   /* or, instead of the above two lines */
   /* we could use grid areas:  */
-  /* grid-area: ftr; */
+  grid-area: ftr;
   background-color: #f08a4b;
 }
+
+
+/* mobile view */
+@media (max-width:800px){
+  #app{
+  grid-template-areas: 
+  "hdr hdr hdr"
+  "nav nav nav"
+  "ar1 ar1 ar1"
+  "ar2 ar2 ar2"
+  "ads ads ads"
+  "ftr ftr ftr";
+}
+};
